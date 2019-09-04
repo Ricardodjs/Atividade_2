@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="663.0" prefWidth="601.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="exercicio2.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Label layoutX="139.0" layoutY="34.0" text="QUAIS GENÊROS DE FILME VOCÊ PREFERE?">
+         <font>
+            <Font name="System Italic" size="17.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="chcAcao" layoutX="117.0" layoutY="89.0" mnemonicParsing="false" text="AÇÃO" />
+      <CheckBox fx:id="chcComedia" layoutX="398.0" layoutY="89.0" mnemonicParsing="false" text="COMÉDIA" />
+      <CheckBox fx:id="chcRomance" layoutX="297.0" layoutY="89.0" mnemonicParsing="false" text="ROMANCE" />
+      <CheckBox fx:id="chcTerror" layoutX="201.0" layoutY="89.0" mnemonicParsing="false" text="TERROR" />
+      <Label layoutX="139.0" layoutY="154.0" text="QUAL FIME GOSTARIA DE VER AGORA?">
+         <font>
+            <Font name="System Italic" size="17.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rbTitanic" layoutX="145.0" layoutY="219.0" mnemonicParsing="false" text="Titanic">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbNenhum" layoutX="345.0" layoutY="219.0" mnemonicParsing="false" text="Nenhum">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbJumanji" layoutX="242.0" layoutY="219.0" mnemonicParsing="false" text="Jumanji">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="25.0" layoutY="265.0" text="QUAL SUA OPINIÃO SOBRE OS FILMES APRESENTADOS ANTERIORMENTE">
+         <font>
+            <Font name="System Italic" size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="btRespostas" layoutX="388.0" layoutY="612.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="41.0" prefWidth="129.0" text="PEGAR RESPOSTAS" />
+      <TextArea fx:id="textArealOpiniao" layoutX="70.0" layoutY="310.0" prefHeight="158.0" prefWidth="446.0" />
+      <Label layoutX="70.0" layoutY="492.0" text="RESPOSTAS:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblGenero" layoutX="70.0" layoutY="537.0" />
+      <Label fx:id="lblFilme" layoutX="70.0" layoutY="566.0" />
+      <Label fx:id="lblOpiniao" layoutX="70.0" layoutY="595.0" />
+    </children>
+</AnchorPane>
